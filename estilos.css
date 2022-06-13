@@ -1,0 +1,1204 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #333;
+}
+
+.borde {
+  border: 2px solid grey;
+  padding: 5px;
+  margin: 10px;
+}
+
+header {
+  background-color: grey;
+}
+
+.containerLogo {
+  width: 120px;
+  height: 120px;
+}
+
+.logo {
+  width: 100%;
+  border-radius: 5%;
+}
+
+/* prefixer para Chrome*/
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: #333;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: saddlebrown;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: grey;
+}
+
+::-webkit-scrollbar-thumb :hover {
+  background-color: saddlebrown;
+}
+
+.navbar {
+  background-color: burlywood;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar :active {
+  color: saddlebrown;
+}
+
+/* Jumbotron*/
+.jumbotron {
+  background-image: url(img/ilustracion.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.jumbotron h1 {
+  color: peru;
+  text-align: end;
+  font-size: 45px;
+  padding-right: 40px;
+}
+
+.jumbotron h1 span {
+  color: #333;
+}
+
+/*Sección 1*/
+.feature {
+  background-color: peru;
+  border: 2px solid grey;
+  border-radius: 3%;
+  padding: 5px 10px;
+}
+
+.feature h4 {
+  text-align: center;
+  color: grey;
+  border-radius: 3px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.feature img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 85%;
+}
+
+/*Sección 2*/
+.h2 {
+  background-color: grey;
+  color: beige;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.seccion2 {
+  background-color: beige;
+}
+
+.seccion2 h4 {
+  color: grey;
+  padding-left: 10px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.seccion2 p {
+  color: grey;
+  font-size: 20px;
+  text-align: start;
+  padding: 20px;
+}
+
+.seccion2 a {
+  color: grey;
+}
+
+.seccion2 a:hover {
+  color: saddlebrown;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.contorno {
+  border: 30px solid burlywood;
+  border-radius: 5px;
+}
+
+.img--carousel {
+  min-height: 200px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 30px solid burlywood;
+  border-radius: 5px;
+}
+
+.carousel-inner img {
+  min-height: 500px;
+}
+
+.carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  border: 2px solid burlywood;
+}
+
+.carousel-item p {
+  color: beige;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  min-height: 500px;
+}
+
+/*Sección 3*/
+.bucle-1 {
+  background-color: grey;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  border: 2px solid beige;
+  border-radius: 3%;
+  padding: 10px 15px;
+  /*Creamos el bucle para usar los valores del mapa*/
+}
+
+.bucle-1 h4 {
+  text-align: center;
+  color: beige;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bucle-1 a {
+  color: #333;
+}
+
+.bucle-1 a:hover {
+  color: burlywood;
+  text-decoration: none;
+}
+
+.bucle-1 i:hover {
+  color: burlywood;
+}
+
+.bucle-1 .i--red1 {
+  color: #1CFF87;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red1 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red2 {
+  color: #1309FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red2 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red3 {
+  color: #E61B8B;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red3 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red4 {
+  color: red;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red4 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red5 {
+  color: #73A4FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red5 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red6 {
+  color: brown;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red6 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red7 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red7 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red8 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red8 :hover {
+  color: grey;
+}
+
+.bucle-1 .i--red9 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-1 .i--red9 :hover {
+  color: grey;
+}
+
+.bucle-1 p {
+  text-align: justify;
+  color: beige;
+}
+
+.bucle-2 {
+  background-color: grey;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  border: 2px solid beige;
+  border-radius: 3%;
+  padding: 10px 15px;
+  /*Creamos el bucle para usar los valores del mapa*/
+}
+
+.bucle-2 h4 {
+  text-align: center;
+  color: beige;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bucle-2 a {
+  color: #333;
+}
+
+.bucle-2 a:hover {
+  color: burlywood;
+  text-decoration: none;
+}
+
+.bucle-2 i:hover {
+  color: burlywood;
+}
+
+.bucle-2 .i--red1 {
+  color: #1CFF87;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red1 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red2 {
+  color: #1309FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red2 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red3 {
+  color: #E61B8B;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red3 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red4 {
+  color: red;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red4 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red5 {
+  color: #73A4FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red5 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red6 {
+  color: brown;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red6 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red7 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red7 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red8 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red8 :hover {
+  color: grey;
+}
+
+.bucle-2 .i--red9 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-2 .i--red9 :hover {
+  color: grey;
+}
+
+.bucle-2 p {
+  text-align: justify;
+  color: beige;
+}
+
+.bucle-3 {
+  background-color: grey;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  border: 2px solid beige;
+  border-radius: 3%;
+  padding: 10px 15px;
+  /*Creamos el bucle para usar los valores del mapa*/
+}
+
+.bucle-3 h4 {
+  text-align: center;
+  color: beige;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bucle-3 a {
+  color: #333;
+}
+
+.bucle-3 a:hover {
+  color: burlywood;
+  text-decoration: none;
+}
+
+.bucle-3 i:hover {
+  color: burlywood;
+}
+
+.bucle-3 .i--red1 {
+  color: #1CFF87;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red1 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red2 {
+  color: #1309FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red2 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red3 {
+  color: #E61B8B;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red3 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red4 {
+  color: red;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red4 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red5 {
+  color: #73A4FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red5 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red6 {
+  color: brown;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red6 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red7 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red7 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red8 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red8 :hover {
+  color: grey;
+}
+
+.bucle-3 .i--red9 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-3 .i--red9 :hover {
+  color: grey;
+}
+
+.bucle-3 p {
+  text-align: justify;
+  color: beige;
+}
+
+.bucle-4 {
+  background-color: grey;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+  border: 2px solid beige;
+  border-radius: 3%;
+  padding: 10px 15px;
+  /*Creamos el bucle para usar los valores del mapa*/
+}
+
+.bucle-4 h4 {
+  text-align: center;
+  color: beige;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bucle-4 a {
+  color: #333;
+}
+
+.bucle-4 a:hover {
+  color: burlywood;
+  text-decoration: none;
+}
+
+.bucle-4 i:hover {
+  color: burlywood;
+}
+
+.bucle-4 .i--red1 {
+  color: #1CFF87;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red1 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red2 {
+  color: #1309FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red2 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red3 {
+  color: #E61B8B;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red3 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red4 {
+  color: red;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red4 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red5 {
+  color: #73A4FA;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red5 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red6 {
+  color: brown;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red6 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red7 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red7 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red8 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red8 :hover {
+  color: grey;
+}
+
+.bucle-4 .i--red9 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-right: 12px;
+}
+
+.bucle-4 .i--red9 :hover {
+  color: grey;
+}
+
+.bucle-4 p {
+  text-align: justify;
+  color: beige;
+}
+
+.bucle-1 {
+  background-color: #cf8a47;
+}
+
+.bucle-2 {
+  background-color: #d18f4f;
+}
+
+.bucle-3 {
+  background-color: #d39457;
+}
+
+.bucle-4 {
+  background-color: #d59a5f;
+}
+
+footer {
+  background-color: grey;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(#333));
+  background-image: linear-gradient(grey, #333);
+  min-height: 60px;
+  color: beige;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 15px;
+  padding: 0px 80px 0px 80px;
+}
+
+footer a {
+  color: beige;
+  font-size: 30px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+footer a :hover {
+  color: burlywood;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #333;
+  border: 3px solid beige;
+  color: beige;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 15px black;
+          box-shadow: 4px 4px 15px black;
+}
+
+/*Nosotros*/
+.nosotros {
+  min-height: 530px;
+}
+
+.nleft {
+  background-image: url(img/cervezasss.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 5px solid beige;
+  padding: 5px;
+  min-height: 300px;
+}
+
+.nleft img {
+  width: 100%;
+}
+
+.nrigth {
+  background-image: url(img/pendon.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 5px;
+}
+
+.nrigth h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nrigth p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: black;
+  padding: 5px;
+}
+
+.nrigth a {
+  float: initial;
+  height: 5px;
+  background-color: burlywood;
+  color: beige;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  border: 3px solid grey;
+  width: 600;
+  padding: 4px;
+  margin-left: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.nrigth a:hover {
+  background-color: peru;
+}
+
+.galeria {
+  background-color: saddlebrown;
+  min-height: 500px;
+  width: 98%;
+  gap: 3px;
+}
+
+.img {
+  border: 1px solid beige;
+  height: 280px;
+  color: beige;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+
+.img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+}
+
+.img1 {
+  background-color: grey;
+  background-image: url(img/10.webp);
+  background-size: cover;
+  background-position-x: 70%;
+}
+
+.img2 {
+  background-color: burlywood;
+  background-image: url(img/botellas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background-color: saddlebrown;
+  background-image: url(img/stand.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  background-color: saddlebrown;
+  background-image: url(img/compartir.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img5 {
+  background-color: beige;
+  background-image: url(img/barcelo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img6 {
+  background-color: black;
+  background-image: url(img/guayamuri.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img7 {
+  background-color: #333;
+  background-image: url(img/alcazares.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img8 {
+  background-color: grey;
+  background-image: url(img/pescadores.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Menu*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  min-height: 200px;
+  background-color: grey;
+  background-image: url(img/cervezasss.jpg);
+  background-size: center;
+  background-position: bottom;
+  border: 2px solid peru;
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.titulosMenu {
+  font-size: 15px;
+  text-align: center;
+  color: beige;
+}
+
+.tabla_Container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: beige;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100px;
+  font-size: 12px;
+  -webkit-box-shadow: 5px 5px 7px 0px black;
+          box-shadow: 5px 5px 7px 0px black;
+  padding: 5px;
+  margin: 2px;
+}
+
+/*Reservaciones*/
+.reservaciones {
+  background-image: url(img/flamenco1.svg);
+  background-size: auto;
+  background-position: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border: 2px solid peru;
+  padding: 10px;
+  margin: 10px;
+}
+
+.formContainer {
+  background-color: burlywood;
+  width: 70%;
+  -webkit-box-shadow: 5px 5px 7px 0px #333;
+          box-shadow: 5px 5px 7px 0px #333;
+  color: white;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formContainer__title {
+  color: beige;
+  font-size: 14px;
+}
+
+.form {
+  text-align: center;
+}
+
+.form__label {
+  color: beige;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.form__input,
+.form__texarea {
+  background-color: beige;
+  width: 60%;
+  margin: 8px;
+  padding: 8px;
+  color: #333;
+  border: #333;
+  border-bottom: solid 1px burlywood;
+  font-family: 'Domine', serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.form__texarea {
+  color: #333;
+  height: 80px;
+  resize: none;
+}
+
+.form__input:focus,
+.form__texarea:focus {
+  color: #333;
+  outline: none;
+}
+
+.form__input--submit {
+  color: #333;
+  background-color: beige;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form__input--submit:hover {
+  background-color: burlywood;
+}
+
+/*Contacto*/
+.contacto {
+  background-color: burlywood;
+  background-position: initial;
+  width: 100%;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.divContacto {
+  width: 33%;
+  min-height: 300px;
+  color: beige;
+  font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.whatsapp {
+  background-color: #1CFF87;
+  color: beige;
+  border-radius: 50px;
+  font-size: 45px;
+}
+
+.i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  font-size: 30px;
+  -webkit-animation-name: moto;
+          animation-name: moto;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes moto {
+  0% {
+    width: 100px;
+    color: black;
+  }
+  20% {
+    width: 120px;
+    color: burlywood;
+    padding-left: 20%;
+  }
+  40% {
+    width: 140px;
+    color: peru;
+    padding-left: 40%;
+  }
+  60% {
+    width: 160px;
+    color: black;
+    padding-left: 60%;
+  }
+  80% {
+    width: 180px;
+    color: grey;
+    padding-left: 80%;
+  }
+  90% {
+    width: 190px;
+    color: peru;
+    padding-left: 90%;
+  }
+  100% {
+    width: 200px;
+    color: black;
+    padding-left: 100%;
+  }
+}
+
+@keyframes moto {
+  0% {
+    width: 100px;
+    color: black;
+  }
+  20% {
+    width: 120px;
+    color: burlywood;
+    padding-left: 20%;
+  }
+  40% {
+    width: 140px;
+    color: peru;
+    padding-left: 40%;
+  }
+  60% {
+    width: 160px;
+    color: black;
+    padding-left: 60%;
+  }
+  80% {
+    width: 180px;
+    color: grey;
+    padding-left: 80%;
+  }
+  90% {
+    width: 190px;
+    color: peru;
+    padding-left: 90%;
+  }
+  100% {
+    width: 200px;
+    color: black;
+    padding-left: 100%;
+  }
+}
+
+#mapa {
+  -ms-flex-negative: initial;
+      flex-shrink: initial;
+  width: 100%;
+  min-height: 300px;
+  padding: 5px;
+}
+/*# sourceMappingURL=estilos.css.map */

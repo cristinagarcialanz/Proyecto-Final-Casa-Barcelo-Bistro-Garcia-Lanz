@@ -1,0 +1,665 @@
+//Constantes
+//Paleta de Colores
+$color1: grey;
+$color2: burlywood;
+$color3: saddlebrown;
+$color4: peru;
+$color5: beige;
+$color6: black;
+$color7: #333;
+
+//Operadores - inicio Sección 2
+$ancho: 100%;
+$alto: 500px;
+
+$var1: 720px;
+$var2: 200px;
+
+//tamaño de títulos
+$font-xs: 15px;
+$font-small: 20px;
+$font-med: 25px;
+$font-large: 30px;
+$font-xl: 45px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color7;
+}
+
+.borde {
+    border: 2px solid $color1;
+    padding: 5px;
+    margin: 10px;
+}
+
+header {
+    background-color: $color1;
+}
+
+.containerLogo {
+    width: 120px;
+    height: 120px;
+}
+
+.logo {
+    width: $ancho;
+    border-radius: 5%;
+}
+
+/* prefixer para Chrome*/
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: $color7;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: $color3;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: $color1;
+
+    :hover {
+        background-color: $color3;
+    }
+}
+
+.navbar {
+    background-color: $color2;
+
+    a {
+        color: $color6;
+    }
+
+    :active {
+        color: $color3;
+    }
+}
+
+/* Jumbotron*/
+.jumbotron {
+    background-image: url(img/ilustracion.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+
+    h1 {
+        color: $color4;
+        text-align: end;
+        font-size: $font-xl;
+        padding-right: 40px;
+
+        span {
+            color: $color7;
+        }
+    }
+
+}
+
+/*Sección 1*/
+.feature {
+    background-color: $color4;
+    border: 2px solid $color1;
+    border-radius: 3%;
+    padding: 5px 10px;
+
+    h4 {
+        text-align: center;
+        color: $color1;
+        border-radius: 3px;
+        font-size: $font-small;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    img {
+        align-items: center;
+        width: 90%;
+        height: 85%;
+    }
+}
+
+/*Sección 2*/
+.h2 {
+    background-color: $color1;
+    color: $color5;
+    text-align: center;
+    font-size: $font-med;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.seccion2 {
+    background-color: $color5;
+
+
+    h4 {
+        color: $color1;
+        padding-left: 10px;
+        padding-top: 30px;
+        text-align: center;
+        font-size: $font-med;
+    }
+
+    p {
+        color: $color1;
+        font-size: $font-small;
+        text-align: start;
+        padding: 20px;
+
+    }
+
+    a {
+        color: $color1;
+    }
+
+    a:hover {
+        color: $color3;
+        font-size: $font-large;
+        text-decoration: none;
+    }
+}
+
+.contorno {
+    border: 30px solid $color2;
+    border-radius: 5px;
+}
+
+.img--carousel {
+    min-height: 200px;
+    width: 100%;
+    align-items: center;
+    border: 30px solid $color2;
+    border-radius: 5px;
+}
+
+.carousel-inner img {
+    min-height: $alto;
+}
+
+.carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 2px solid $color2;
+}
+
+.carousel-item p {
+    color: $color5;
+    text-align: center;
+}
+
+.video {
+    width: 100%;
+    min-height: $alto;
+}
+
+/*Sección 3*/
+@for $in from 1 through 4 {
+
+    .bucle-#{$in} {
+        background-color: $color1;
+        min-height: 100%;
+        width: $ancho;
+        text-align: center;
+        border: 2px solid $color5;
+        border-radius: 3%;
+        padding: 10px 15px;
+
+        h4 {
+            text-align: center;
+            color: $color5;
+            font-size: $font-small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            color: $color7;
+        }
+
+        a:hover {
+            color: $color2;
+            text-decoration: none;
+        }
+
+        i:hover {
+            color: $color2;
+        }
+
+        $redes: (
+            /*Declaramos nuestro mapa*/
+            red1: #1CFF87,
+            red2: #1309FA,
+            red3: #E61B8B,
+            red4: red,
+            red5: #73A4FA,
+            red6: brown,
+            red7: black,
+            red8: white,
+            red9: white,
+        );
+
+        /*Creamos el bucle para usar los valores del mapa*/
+        @each $red1,
+        $color in $redes {
+            .i--#{$red1} {
+                color: $color;
+                text-align: center;
+                font-size: $font-med;
+                padding-right: 12px;
+
+                :hover {
+                    color: $color1;
+                }
+            }
+        }
+
+        p {
+            text-align: justify;
+            color: $color5;
+        }
+    }
+}
+
+$base-color: $color4;
+
+@for $in from 1 through 4 {
+    .bucle-#{$in} {
+        background-color: lighten($base-color, $in *2%);
+    }
+}
+
+footer {
+    background-color: $color1;
+    background-image: linear-gradient($color1, $color7);
+    min-height: 60px;
+    color: $color5;
+    padding: 10px;
+
+    p {
+        font-size: $font-xs;
+        padding: 0px 80px 0px 80px;
+    }
+
+    a {
+        color: $color5;
+        font-size: $font-large;
+        letter-spacing: 20px;
+        text-align: center;
+
+        :hover {
+            color: $color2;
+        }
+    }
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: $color7;
+    border: 3px solid $color5;
+    color: $color5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px $color6;
+}
+
+/*Nosotros*/
+.nosotros {
+    min-height: 530px;
+}
+
+.nleft {
+    background-image: url(img/cervezasss.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid $color5;
+    padding: 5px;
+    min-height: 300px;
+}
+
+.nleft img {
+    width: $ancho;
+}
+
+.nrigth {
+    background-image: url(img/pendon.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 5px;
+
+    h3 {
+        text-align: center;
+        font-size: $font-med;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: $font-xs;
+        color: $color6;
+        padding: 5px;
+    }
+
+    a {
+        float: initial;
+        height: 5px;
+        background-color: $color2;
+        color: $color5;
+        border-radius: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        border: 3px solid $color1;
+        width: 600;
+        padding: 4px;
+        margin-left: 10px;
+        align-self: flex-start;
+    }
+
+    a:hover {
+        background-color: $color4;
+    }
+}
+
+.galeria {
+    background-color: $color3;
+    min-height: 500px;
+    width: 98%;
+    gap: 3px;
+}
+
+.img {
+    border: 1px solid $color5;
+    height: 280px;
+    color: $color5;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    transition: all 0.75s;
+    filter: sepia(100%);
+}
+
+.img1 {
+    background-color: $color1;
+    background-image: url(img/10.webp);
+    background-size: cover;
+    background-position-x: 70%;
+}
+
+.img2 {
+    background-color: $color2;
+    background-image: url(img/botellas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3 {
+    background-color: $color3;
+    background-image: url(img/stand.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4 {
+    background-color: $color3;
+    background-image: url(img/compartir.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img5 {
+    background-color: $color5;
+    background-image: url(img/barcelo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img6 {
+    background-color: $color6;
+    background-image: url(img/guayamuri.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img7 {
+    background-color: $color7;
+    background-image: url(img/alcazares.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img8 {
+    background-color: $color1;
+    background-image: url(img/pescadores.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Menu*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    min-height: 200px;
+    background-color: $color1;
+    background-image: url(img/cervezasss.jpg);
+    background-size: center;
+    background-position: bottom;
+    border: 2px solid $color4;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.titulosMenu {
+    font-size: $font-xs;
+    text-align: center;
+    color: $color5;
+}
+
+.tabla_Container {
+    flex-direction: row;
+    background-color: $color5;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    font-size: 12px;
+    box-shadow: 5px 5px 7px 0px $color6;
+    padding: 5px;
+    margin: 2px;
+}
+
+/*Reservaciones*/
+.reservaciones {
+    background-image: url(img/flamenco1.svg);
+    background-size: auto;
+    background-position: center;
+    align-content: center;
+    justify-content: left;
+    border: 2px solid $color4;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formContainer {
+    background-color: $color2;
+    width: 70%;
+    box-shadow: 5px 5px 7px 0px $color7;
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+.formContainer__title {
+    color: beige;
+    font-size: 14px;
+}
+
+.form {
+    text-align: center;
+}
+
+.form__label {
+    color: beige;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.form__input,
+.form__texarea {
+    background-color: $color5;
+    width: 60%;
+    margin: 8px;
+    padding: 8px;
+    color: $color7;
+    border: $color7;
+    border-bottom: solid 1px $color2;
+    font-family: 'Domine', serif;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.form__texarea {
+    color: $color7;
+    height: 80px;
+    resize: none;
+}
+
+.form__input:focus,
+.form__texarea:focus {
+    color: $color7;
+    outline: none;
+}
+
+.form__input--submit {
+    color: $color7;
+    background-color: $color5;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form__input--submit:hover {
+    background-color: $color2;
+}
+
+/*Contacto*/
+.contacto {
+    background-color: $color2;
+    background-position: initial;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.divContacto {
+    width: 33%;
+    min-height: 300px;
+    color: $color5;
+    font-size: 18px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.whatsapp {
+    background-color: #1CFF87;
+    color: $color5;
+    border-radius: 50px;
+    font-size: $font-xl;
+}
+
+.i {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: $font-large;
+    animation-name: moto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes moto {
+
+    0% {
+        width: 100px;
+        color: $color6;
+    }
+
+    20% {
+        width: 120px;
+        color: $color2;
+        padding-left: 20%;
+    }
+
+    40% {
+        width: 140px;
+        color: $color4;
+        padding-left: 40%;
+    }
+
+    60% {
+        width: 160px;
+        color: $color6;
+        padding-left: 60%;
+    }
+
+    80% {
+        width: 180px;
+        color: $color1;
+        padding-left: 80%;
+    }
+
+    90% {
+        width: 190px;
+        color: $color4;
+        padding-left: 90%;
+    }
+
+    100% {
+        width: 200px;
+        color: $color6;
+        padding-left: 100%;
+    }
+}
+
+#mapa {
+    flex-shrink: initial;
+    width: 100%;
+    min-height: 300px;
+    padding: 5px;
+}
